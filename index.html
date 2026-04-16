@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yahtzee</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="aligntables">
+        <table>
+            <thead>
+                <th colspan="6">Voorbeeld mapping van arrays</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="example"></td>
+                    <td class="example"></td>
+                    <td class="example"></td>
+                    <td class="example"></td>
+                    <td class="example"></td>
+                    <td class="example"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="aligntables">
+        <table>
+            <thead>
+                <th colspan="5">SCOREBORD</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="results"></td>
+                    <td class="results"></td>
+                    <td class="results"></td>
+                    <td class="results"></td>
+                    <td class="results"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <div class="buttondiv">
+        <button id="throw" class="buttonopmaak">Gooien!</button>
+    </div>
+
+
+    <div class="aligntables">
+        <table>
+            <thead>
+                <th colspan="4">DEEL 1</th>
+            </thead>
+            <thead>
+                <th colspan="2">Punten</th>
+                <th>Puntentelling</th>
+                <th>1e spel</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="2">Enen</td>
+                    <td>Tel alle enen op</td>
+                    <td><input class="resultsGameOne" type="text"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Tweeen</td>
+                    <td>Tel alle tweeen op</td>
+                    <td><input class="resultsGameOne" type="text"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Drieen</td>
+                    <td>Tel alle drieen op</td>
+                    <td><input class="resultsGameOne" type="text"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Vieren</td>
+                    <td>Tel alle vieren op</td>
+                    <td><input class="resultsGameOne" type="text"></td></tr>
+                <tr>
+                    <td colspan="2">Vijven</td>
+                    <td>Tel alle vijven op</td>
+                    <td><input class="resultsGameOne" type="text"></td></tr>
+                </tr>
+                <tr>
+                    <td colspan="2">Zessen op</td>
+                    <td>Tel alle zessen op</td>
+                    <td><input class="resultsGameOne" type="text"></td>
+                </tr>
+                <tr>
+                    <td colspan="3">Totaal aantal punten</td>
+                    <td><input class="resultTotalScore" type="text"></td>
+                </tr>
+                <tr>
+                    <td>Bonus 35 punten</td>
+                    <td colspan="2">Als puntentotaal 25 of meer is</td>
+                    <td><input class="resultBonusScore" type="text"></td>
+                </tr>
+                <tr>
+                    <td>Totaal</td>
+                    <td colspan="2">Van de bovenste helft</td>
+                    <td><input class="resultTotalPlusBonus" type="text"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table>
+            <thead>
+                <th colspan="4">DEEL 2</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Three of a kind</td>
+                    <td>3 dezelfde scores</td>
+                    <td>Totaal v.d. 5 stenen</td>
+                    <td><input class="threeOfAKind" type="text"></td>
+                </tr>
+                <tr>
+                    <td>Carre</td>
+                    <td>4 dezelfde scores</td>
+                    <td>Totaal v.d. 5 stenen</td>
+                    <td><input class="fourOfAKind" type="text"></td>
+                </tr>
+                <tr>
+                    <td>Full House</td>
+                    <td>2 + 3 dezelfde scores</td>
+                    <td>25 punten</td>
+                    <td><input class="fullHouse" type="text"></td>
+                </tr>
+                <tr>
+                    <td>Kleine Straat</td>
+                    <td>4 opeenvolgende scores</td>
+                    <td>30 punten</td>
+                    <td><input class="smallStreet" type="text"></td>
+                </tr>
+                <tr>
+                    <td>Grote Straat</td>
+                    <td>5 opeenvolgende scores</td>
+                    <td>40 punten</td>
+                    <td><input class="bigStreet" type="text"></td>
+                </tr>
+                <tr>
+                    <td>Superscore</td>
+                    <td>5 dezelfde scores</td>
+                    <td>50 punten</td>
+                    <td><input class="superScore" type="text"></td>
+                </tr>
+                <tr>
+                    <td>Chance</td>
+                    <td>Vrije keuze</td>
+                    <td>Totaal v.d. 5 stenen</td>
+                    <td><input class="chanceScore" type="text"></td>
+                </tr>
+                <tr>
+                    <td colspan="3">Totaal deel 2</td>
+                    <td><input class="totalGameTwo" type="text"></td>
+                </tr>
+                <tr>
+                    <td colspan="3">Totaal deel 1</td>
+                    <td><input class="resultTotalPlusBonus" type="text"></td>
+                </tr>
+                <tr>
+                    <td colspan="3">Totaal Generaal</td>
+                    <td><input class="totalBothGames" type="text"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+<script src="script.js"></script>
+
+</body>
+</html>
